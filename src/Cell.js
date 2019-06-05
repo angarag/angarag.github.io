@@ -1,7 +1,7 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import "./css/tictactoe.css";
 
-class Cell extends PureComponent {
+class Cell extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,6 +15,17 @@ class Cell extends PureComponent {
     });
     //    console.log(this.props.index);
     this.props.onClick(this.props.index);
+  }
+  shouldComponentUpdate(newProps, newState) {
+    if (this.props.is_reset !== newProps.is_reset) {
+      this.setState({
+        clicked: false
+      });
+      return true;
+    }
+    if (this.state.clicked !== newState.clicked) return true;
+    if (this.props.has_winner !== newProps.has_winner) return true;
+    return false;
   }
 
   render() {

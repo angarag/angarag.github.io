@@ -16,7 +16,8 @@ class Tictactoe extends Component {
         "258",
         "048",
         "246"
-      ]
+      ],
+      is_reset: false
     };
     this.buttonClick = this.buttonClick.bind(this);
     this.hasWinner = this.hasWinner.bind(this);
@@ -25,7 +26,8 @@ class Tictactoe extends Component {
   reset() {
     this.setState({
       currentPlayer: "X",
-      cells: new Array(9)
+      cells: new Array(9),
+      is_reset: !this.state.is_reset
     });
   }
   buttonClick(item) {
@@ -40,11 +42,11 @@ class Tictactoe extends Component {
         });
       else
         this.setState({
-          currentPlayer: "Noone won"
+          currentPlayer: "Noone won, click to reset"
         });
     else {
       this.setState({
-        currentPlayer: this.state.currentPlayer + " won"
+        currentPlayer: this.state.currentPlayer + " won, click to reset"
       });
     }
   }
@@ -109,6 +111,7 @@ class Tictactoe extends Component {
             has_winner={
               this.state.currentPlayer.indexOf("won") !== -1 ? true : false
             }
+            is_reset={this.state.is_reset}
           />
         </div>
       );
