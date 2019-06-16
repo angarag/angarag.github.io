@@ -8,14 +8,14 @@ class Tictactoe extends Component {
       currentPlayer: "X",
       cells: new Array(9),
       winner_combinations: [
-        "012",
-        "345",
-        "678",
-        "036",
-        "147",
-        "258",
-        "048",
-        "246"
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
       ],
       is_reset: false
     };
@@ -42,88 +42,80 @@ class Tictactoe extends Component {
         });
       else
         this.setState({
-          currentPlayer: "Noone won, click to reset"
+          currentPlayer: "Noone wins"
         });
     else {
       this.setState({
-        currentPlayer: this.state.currentPlayer + " won, click to reset"
+        currentPlayer: this.state.currentPlayer + " wins"
       });
     }
   }
   hasWinner() {
-    let Xs = this.state.cells.filter(x => x === "X");
-    let Os = this.state.cells.filter(x => x === "O");
+    const Xs = this.state.cells.filter(i => i === "X");
+    const Os = this.state.cells.filter(i => i === "O");
+    const arr = {
+      X: [],
+      O: []
+    };
     let result = false;
     if (Xs.length > 2 || Os.length > 2) {
-      console.log("winner detection running");
-      const set = {
-        X: [],
-        O: [],
-        undefined: []
-      };
-      for (let i = 0; i < this.state.cells.length; i++) {
-        const tmp = this.state.cells[i];
-        set[tmp].push(i);
-      }
-      let Xstr = set["X"]
-        .toString()
-        .split(",")
-        .join("");
-      let Ostr = set["O"]
-        .toString()
-        .split(",")
-        .join("");
-      console.log(Xstr, Ostr);
-      let winner = null;
-      for (let i = 0; i < this.state.winner_combinations.length; i++) {
-        const item = this.state.winner_combinations[i];
-        if (helper(Xstr, item)) {
-          winner = "X";
-          break;
-        } else if (helper(Ostr, item)) {
-          winner = "Y";
-          break;
+      for (let i in this.state.cells)
+        if (this.state.cells[i] !== undefined)
+          arr[this.state.cells[i]].push(parseInt(i));
+      console.log("Winner detection is running", Xs, Os, arr);
+      for (let i of this.state.winner_combinations) {
+        let count = 0;
+        for (let x of arr.X) {
+          if (i.includes(x)) count++;
+        }
+        if (count === 3) {
+          console.log("X wins");
+          return true;
+        }
+        count = 0;
+        for (let o of arr.O) {
+          if (i.includes(o)) {
+            count++;
+          }
+        }
+        if (count === 3) {
+          console.log("O wins");
+          return true;
         }
       }
-      console.log("winner", winner);
-      if (winner != null) {
-        result = true;
-      }
-      function helper(str, sub) {
-        let count = 0;
-        for (let c of sub) if (str.indexOf(c) != -1) count++;
-        return count === sub.length;
-      }
+      console.log(arr);
     }
     return result;
   }
+
   render() {
     console.log("Rendering: Tictactoe");
     let result = [];
     for (let i = 0; i < 9; i++) {
       result.push(
-        <div className="cell">
+        <div className="grid-item">
           <Cell
             onClick={this.buttonClick}
-            entry={this.state.cells[i]}
             index={i}
             key={i}
             has_winner={
-              this.state.currentPlayer.indexOf("won") !== -1 ? true : false
+              this.state.currentPlayer.indexOf("wins") !== -1 ? true : false
             }
             is_reset={this.state.is_reset}
-          />
+          >
+            {this.state.cells[i]}
+          </Cell>
         </div>
       );
-      if ((i + 1) % 3 === 0) result.push(<div className="clearfix" />);
     }
 
     return (
       <>
         <div className="header">
-          <span onClick={this.reset}>Player: {this.state.currentPlayer}</span>
+          <div>Player: {this.state.currentPlayer}</div>
+          <button onClick={this.reset}>Reset</button>
         </div>
-        <div className="row">{result}</div>
+        <div className="grid">{result}</div>
       </>
     );
   }

@@ -39,7 +39,7 @@ class Cell extends Component {
             : ""
         }
       >
-        {this.props.entry}
+        {this.props.children}
       </button>
     );
   }
