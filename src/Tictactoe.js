@@ -6,7 +6,7 @@ class Tictactoe extends Component {
     super(props);
     this.state = {
       currentPlayer: "X",
-      cells: new Array(9),
+      cells: this.props.cells ? this.props.cells : new Array(9),
       winner_combinations: [
         [0, 1, 2],
         [3, 4, 5],
@@ -116,6 +116,7 @@ class Tictactoe extends Component {
           <button onClick={this.reset}>Reset</button>
         </div>
         <div className="grid">{result}</div>
+        {this.props.aCell}
       </>
     );
   }
