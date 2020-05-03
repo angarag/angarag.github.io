@@ -1,8 +1,8 @@
 import React from "react";
 
-const Resume = () => {
+const Education = () => {
   return (
-    <section className="ftco-section ftco-no-pb goto-here" id="resume">
+    <section className="ftco-section ftco-no-pb goto-here" id="education">
       <div className="container">
         <div className="row">
           <div className="col-md-3">
@@ -468,4 +468,4 @@ const Resume = () => {
     </section>
   );
 };
-export default Resume;
+export default Education;

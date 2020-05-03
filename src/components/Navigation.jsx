@@ -9,7 +9,7 @@ const Nav = ({ children }) => {
       >
         <div className="container">
           <a className="navbar-brand" href="index.html">
-            <span>R</span>onaldo
+            <span>A</span>ngarag
           </a>
           <button
             className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
@@ -36,8 +36,8 @@ const Nav = ({ children }) => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#resume" className="nav-link">
-                  <span>Resume</span>
+                <a href="#education" className="nav-link">
+                  <span>Experience</span>
                 </a>
               </li>
               <li className="nav-item">

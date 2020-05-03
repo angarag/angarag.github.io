@@ -9,7 +9,8 @@ import "./othercss/style.css";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Busad from "./components/Busad";
-import Resume from "./components/Resume";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
 const Main = () => {
   React.useEffect(() => {}, []);
 
@@ -24,8 +25,9 @@ const Main = () => {
       <Nav />
       <Home />
       <AboutMe />
-      <Resume />
+      <Education />
       <Busad />
+      <Contact />
     </>
   );
 };

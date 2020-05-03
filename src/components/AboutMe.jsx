@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "../images/about.jpg";
+import Mouse from "./Mouse";
 const AboutMe = () => {
   return (
     <>
@@ -7,6 +8,7 @@ const AboutMe = () => {
         id="about"
         className="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
       >
+        <div className="overlay"></div>
         <div className="container">
           <div className="row d-flex no-gutters">
             <div className="col-md-6 col-lg-6 d-flex">
@@ -18,49 +20,31 @@ const AboutMe = () => {
                 ></div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-6 pl-md-5 py-5">
+            <div className="col-md-6 col-lg-6 pl-md-5 py-5 aboutMars">
               <div className="row justify-content-start pb-3">
                 <div className="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
                   <h1 className="big">About</h1>
                   <h2 className="mb-4">About Me</h2>
                   <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia.
+                    Versatile Software Engineer with 9+ years of experience in
+                    IT.
                   </p>
                   <ul className="about-info mt-4 px-md-0 px-2">
                     <li className="d-flex">
-                      <span>Name:</span> <span>Ronaldo Fredrickson</span>
+                      <span>Email:</span>{" "}
+                      <span>angarag.batjargal@gmail.com</span>
                     </li>
                     <li className="d-flex">
-                      <span>Date of birth:</span> <span>November 28, 1989</span>
-                    </li>
-                    <li className="d-flex">
-                      <span>Address:</span>{" "}
-                      <span>San Francisco CA 97987 USA</span>
-                    </li>
-                    <li className="d-flex">
-                      <span>Zip code:</span> <span>1000</span>
-                    </li>
-                    <li className="d-flex">
-                      <span>Email:</span> <span>ronaldo@gmail.com</span>
-                    </li>
-                    <li className="d-flex">
-                      <span>Phone: </span> <span>+1-2234-5678-9-0</span>
+                      <span>Phone: </span> <span>+1-707-508-9432</span>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="counter-wrap ftco-animate d-flex mt-md-3 fadeInUp ftco-animated">
                 <div className="text">
-                  <p className="mb-4">
-                    <span className="number" data-number="120">
-                      120
-                    </span>
-                    <span>Project complete</span>
-                  </p>
                   <p>
                     <a href="/dd" className="btn btn-primary py-3 px-3">
-                      Download CV
+                      Download resume
                     </a>
                   </p>
                 </div>
@@ -68,6 +52,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
+        <Mouse path="education" />
       </section>
     </>
   );

@@ -23,3 +23,18 @@ html {
   left: 0;
   transform: unset;
 }
+section {
+  position: relative;
+  height: 100vh !important;
+}
+.customSvg {
+  display: flex !important;
+  justify-content: center;
+}
+.aboutMars {
+  background-color: #edf1ff;
+  height: 100vh;
+  min-width: 50vw;
+  position: absolute !important;
+  right: 0;
+}
