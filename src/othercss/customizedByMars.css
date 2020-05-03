@@ -1,0 +1,25 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+nav#ftco-navbar {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex !important;
+  justify-content: center;
+  z-index: 7;
+  padding: 0;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white !important;
+}
+nav#ftco-navbar a {
+  margin-left: 20px;
+}
+html {
+  top: 0;
+  left: 0;
+  transform: unset;
+}

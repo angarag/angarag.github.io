@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Nav = ({ children }) => {
+const Nav = ({ children }) => {
   return (
     <>
       <nav
@@ -57,3 +57,4 @@ export const Nav = ({ children }) => {
     </>
   );
 };
+export default Nav;
