@@ -2,8 +2,11 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="ftco-section ftco-no-pb goto-here" id="education">
-      <div className="container">
+    <section
+      className="ftco-section ftco-no-pb goto-here marginTop"
+      id="education"
+    >
+      <div className="container ">
         <div className="row">
           <div className="col-md-3">
             <nav id="navi">
@@ -23,7 +26,7 @@ const Education = () => {
               </ul>
             </nav>
           </div>
-          <div className="col-md-9">
+          <div className="col-md-9 ">
             <div id="page-1" class="page one">
               <h2 className="heading">Education</h2>
               <div className="resume-wrap d-flex ftco-animate">
@@ -31,64 +34,25 @@ const Education = () => {
                   <span className="flaticon-ideas"></span>
                 </div>
                 <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Bachelor of Science in Computer Science</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
+                  <span className="date">2018-2020</span>
+                  <h2>Master degree in Computer Software</h2>
+                  <span className="position">
+                    Maharishi International University
+                  </span>
                 </div>
               </div>
-              <div className="resume-wrap d-flex ftco-animate">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-ideas"></span>
-                </div>
-                <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Computer Processing Systems/Computer Software</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                </div>
+            </div>
+            <div className="resume-wrap d-flex ftco-animate">
+              <div className="icon d-flex align-items-center justify-content-center">
+                <span className="flaticon-ideas"></span>
               </div>
-              <div className="resume-wrap d-flex ftco-animate">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-ideas"></span>
-                </div>
-                <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Diploma in Computer</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                </div>
-              </div>
-              <div className="resume-wrap d-flex ftco-animate">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-ideas"></span>
-                </div>
-                <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Art &amp; Creative Director</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                </div>
+              <div className="text pl-3">
+                <span className="date">2006-2011</span>
+                <h2>Bachelor of Science in Computer Science</h2>
+                <span className="position">Istanbul Technical University</span>
+                {/* <p>
+                    lorem
+                  </p> */}
               </div>
             </div>
 
@@ -99,14 +63,14 @@ const Education = () => {
                   <span className="flaticon-ideas"></span>
                 </div>
                 <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Software Developer</h2>
-                  <span className="position">Cambridge University</span>
+                  <span className="date">Jul, 2019 - Present</span>
+                  <h2>Software Engineer</h2>
+                  <span className="position">Walmart</span>
                   <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
+                    Front End Lead in the Talent Blueprint project which is a
+                    calibration tool for store hiring manager to make a
+                    data-driven decision on selection events by using
+                    Comparison, Reviewing and Ranking features.
                   </p>
                 </div>
               </div>
@@ -115,14 +79,12 @@ const Education = () => {
                   <span className="flaticon-ideas"></span>
                 </div>
                 <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Web Designer</h2>
-                  <span className="position">Cambridge University</span>
+                  <span className="date">2013-2018</span>
+                  <h2>Technical Planning Engineer</h2>
+                  <span className="position">Mobicom Corporation</span>
                   <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
+                    In charge of planning in-house and vendor products acc' to
+                    short and medium-term business plans.
                   </p>
                 </div>
               </div>
@@ -131,206 +93,39 @@ const Education = () => {
                   <span className="flaticon-ideas"></span>
                 </div>
                 <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Web Marketing</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                </div>
-              </div>
-              <div className="resume-wrap d-flex ftco-animate">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-ideas"></span>
-                </div>
-                <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Art &amp; Creative Director</h2>
-                  <span className="position">Side Tech</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                </div>
-              </div>
-              <div className="resume-wrap d-flex ftco-animate">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-ideas"></span>
-                </div>
-                <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Wordpress Developer</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                </div>
-              </div>
-              <div className="resume-wrap d-flex ftco-animate">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-ideas"></span>
-                </div>
-                <div className="text pl-3">
-                  <span className="date">2017-2018</span>
-                  <h2>UI/UX Designer</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
+                  <span className="date">2011-2013</span>
+                  <h2>Full Stack Developer</h2>
+                  <span className="position">Singleton LLC</span>
+                  <p>Team Lead in the outsourcing project.</p>
                 </div>
               </div>
             </div>
             <div id="page-3" class="page three">
               <h2 className="heading">Skills</h2>
-              <div className="row progress-circle mb-5">
-                <div className="col-lg-4 mb-4">
-                  <div className="bg-white rounded-lg shadow p-4">
-                    <h2 className="h5 font-weight-bold text-center mb-4">
-                      CSS
-                    </h2>
-
-                    <div className="progress mx-auto" data-value="90">
-                      <span className="progress-left">
-                        <span className="progress-bar border-primary"></span>
-                      </span>
-                      <span className="progress-right">
-                        <span className="progress-bar border-primary"></span>
-                      </span>
-                      <div className="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                        <div className="h2 font-weight-bold">
-                          90<sup className="small">%</sup>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row text-center mt-4">
-                      <div className="col-6 border-right">
-                        <div className="h4 font-weight-bold mb-0">28%</div>
-                        <span className="small text-gray">Last week</span>
-                      </div>
-                      <div className="col-6">
-                        <div className="h4 font-weight-bold mb-0">60%</div>
-                        <span className="small text-gray">Last month</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 mb-4">
-                  <div className="bg-white rounded-lg shadow p-4">
-                    <h2 className="h5 font-weight-bold text-center mb-4">
-                      HTML
-                    </h2>
-
-                    <div className="progress mx-auto" data-value="80">
-                      <span className="progress-left">
-                        <span className="progress-bar border-primary"></span>
-                      </span>
-                      <span className="progress-right">
-                        <span className="progress-bar border-primary"></span>
-                      </span>
-                      <div className="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                        <div className="h2 font-weight-bold">
-                          80<sup className="small">%</sup>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row text-center mt-4">
-                      <div className="col-6 border-right">
-                        <div className="h4 font-weight-bold mb-0">28%</div>
-                        <span className="small text-gray">Last week</span>
-                      </div>
-                      <div className="col-6">
-                        <div className="h4 font-weight-bold mb-0">60%</div>
-                        <span className="small text-gray">Last month</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 mb-4">
-                  <div className="bg-white rounded-lg shadow p-4">
-                    <h2 className="h5 font-weight-bold text-center mb-4">
-                      jQuery
-                    </h2>
-
-                    <div className="progress mx-auto" data-value="75">
-                      <span className="progress-left">
-                        <span className="progress-bar border-primary"></span>
-                      </span>
-                      <span className="progress-right">
-                        <span className="progress-bar border-primary"></span>
-                      </span>
-                      <div className="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                        <div className="h2 font-weight-bold">
-                          75<sup className="small">%</sup>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row text-center mt-4">
-                      <div className="col-6 border-right">
-                        <div className="h4 font-weight-bold mb-0">28%</div>
-                        <span className="small text-gray">Last week</span>
-                      </div>
-                      <div className="col-6">
-                        <div className="h4 font-weight-bold mb-0">60%</div>
-                        <span className="small text-gray">Last month</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
+              <div className="row borderBottom">
                 <div className="col-md-6 animate-box">
                   <div className="progress-wrap ftco-animate">
-                    <h3>Photoshop</h3>
+                    <h3>Vanilla JavaScript</h3>
                     <div className="progress">
                       <div
                         className="progress-bar color-1"
                         role="progressbar"
-                        aria-valuenow="90"
+                        aria-valuenow="97"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style={{ width: "90%" }}
+                        style={{ width: "97%" }}
                       >
-                        <span>90%</span>
+                        <span>97%</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6 animate-box">
                   <div className="progress-wrap ftco-animate">
-                    <h3>jQuery</h3>
+                    <h3>React.js, Redux</h3>
                     <div className="progress">
                       <div
                         className="progress-bar color-2"
-                        role="progressbar"
-                        aria-valuenow="85"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style={{ width: "85%" }}
-                      >
-                        <span>85%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 animate-box">
-                  <div className="progress-wrap ftco-animate">
-                    <h3>HTML5</h3>
-                    <div className="progress">
-                      <div
-                        className="progress-bar color-3"
                         role="progressbar"
                         aria-valuenow="95"
                         aria-valuemin="0"
@@ -349,6 +144,40 @@ const Education = () => {
                       <div
                         className="progress-bar color-4"
                         role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: "95%" }}
+                      >
+                        <span>95%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 animate-box">
+                  <div className="progress-wrap ftco-animate">
+                    <h3>HTML5</h3>
+                    <div className="progress">
+                      <div
+                        className="progress-bar color-5"
+                        role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: "95%" }}
+                      >
+                        <span>95%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 animate-box">
+                  <div className="progress-wrap ftco-animate">
+                    <h3>Angular v2+</h3>
+                    <div className="progress">
+                      <div
+                        className="progress-bar color-3"
+                        role="progressbar"
                         aria-valuenow="90"
                         aria-valuemin="0"
                         aria-valuemax="100"
@@ -361,24 +190,93 @@ const Education = () => {
                 </div>
                 <div className="col-md-6 animate-box">
                   <div className="progress-wrap ftco-animate">
-                    <h3>WordPress</h3>
+                    <h3>Node.js</h3>
                     <div className="progress">
                       <div
-                        className="progress-bar color-5"
+                        className="progress-bar color-3"
                         role="progressbar"
-                        aria-valuenow="70"
+                        aria-valuenow="90"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style={{ width: "70%" }}
+                        style={{ width: "90%" }}
                       >
-                        <span>70%</span>
+                        <span>90%</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6 animate-box">
                   <div className="progress-wrap ftco-animate">
-                    <h3>SEO</h3>
+                    <h3>Express.js</h3>
+                    <div className="progress">
+                      <div
+                        className="progress-bar color-3"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: "90%" }}
+                      >
+                        <span>90%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 animate-box">
+                  <div className="progress-wrap ftco-animate">
+                    <h3>HAPI.js</h3>
+                    <div className="progress">
+                      <div
+                        className="progress-bar color-3"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: "90%" }}
+                      >
+                        <span>90%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 animate-box">
+                  <div className="progress-wrap ftco-animate">
+                    <h3>jQuery</h3>
+                    <div className="progress">
+                      <div
+                        className="progress-bar color-3"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: "90%" }}
+                      >
+                        <span>90%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 animate-box">
+                  <div className="progress-wrap ftco-animate">
+                    <h3>Java/Spring boot</h3>
+                    <div className="progress">
+                      <div
+                        className="progress-bar color-6"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: "80%" }}
+                      >
+                        <span>80%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6 animate-box">
+                  <div className="progress-wrap ftco-animate">
+                    <h3>PHP/Symphony</h3>
                     <div className="progress">
                       <div
                         className="progress-bar color-6"
@@ -402,14 +300,12 @@ const Education = () => {
                   <span className="flaticon-ideas"></span>
                 </div>
                 <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Top 10 Web Developer</h2>
-                  <span className="position">Cambridge University</span>
+                  <span className="date">2013-2014</span>
+                  <h2>The Best Project of the Year</h2>
+                  <span className="position">Mobicom Corporation</span>
                   <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
+                    The inhouse developed Ring Back Tone project got awarded the
+                    best project.
                   </p>
                 </div>
               </div>
@@ -418,46 +314,11 @@ const Education = () => {
                   <span className="flaticon-ideas"></span>
                 </div>
                 <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Top 5 LeaderShip Exellence Winner</h2>
-                  <span className="position">Cambridge University</span>
+                  <span className="date">2002, 2003</span>
+                  <h2>Bronze, Silver Medal</h2>
+                  <span className="position">Mathematical Olympiad</span>
                   <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                </div>
-              </div>
-              <div className="resume-wrap d-flex ftco-animate">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-ideas"></span>
-                </div>
-                <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Top 4 Web Tester</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                </div>
-              </div>
-              <div className="resume-wrap d-flex ftco-animate">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-ideas"></span>
-                </div>
-                <div className="text pl-3">
-                  <span className="date">2014-2015</span>
-                  <h2>Art &amp; Creative Director</h2>
-                  <span className="position">Cambridge University</span>
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
+                    Ranked #3 and #2 in South Mongolia region - Math olympiad.
                   </p>
                 </div>
               </div>

@@ -10,10 +10,10 @@ const Busad = () => {
           <div className="row no-gutters justify-content-center pb-5">
             <div className="col-md-12 heading-section text-center ftco-animate">
               <h1 className="big big-2">Projects</h1>
-              <h2 className="mb-4">Our Projects</h2>
+              <h2 className="mb-4">Professional Projects</h2>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia
+                Here are some of the projects I have implemented in my
+                professional career.
               </p>
             </div>
           </div>
@@ -26,9 +26,11 @@ const Busad = () => {
                 <div className="overlay"></div>
                 <div className="text text-center p-4">
                   <h3>
-                    <a href="#">Branding &amp; Illustration Design</a>
+                    <a target="_blank" href="https://cardoctor.mn">
+                      Car Doctor
+                    </a>
                   </h3>
-                  <span>Web Design</span>
+                  <span>Online shopping</span>
                 </div>
               </div>
             </div>
@@ -40,24 +42,11 @@ const Busad = () => {
                 <div className="overlay"></div>
                 <div className="text text-center p-4">
                   <h3>
-                    <a href="#">Branding &amp; Illustration Design</a>
+                    <a target="_blank" href="https://www.bsb.mn">
+                      eBSB
+                    </a>
                   </h3>
-                  <span>Web Design</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div
-                className="project img ftco-animate d-flex justify-content-center align-items-center"
-                style={{ backgroundImage: `url(${WorkImg2})` }}
-              >
-                <div className="overlay"></div>
-                <div className="text text-center p-4">
-                  <h3>
-                    <a href="#">Branding &amp; Illustration Design</a>
-                  </h3>
-                  <span>Web Design</span>
+                  <span>Online shopping for BSB company</span>
                 </div>
               </div>
             </div>
@@ -69,37 +58,9 @@ const Busad = () => {
                 <div className="overlay"></div>
                 <div className="text text-center p-4">
                   <h3>
-                    <a href="#">Branding &amp; Illustration Design</a>
+                    <a href="#">Talent Blueprint</a>
                   </h3>
-                  <span>Web Design</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div
-                className="project img ftco-animate d-flex justify-content-center align-items-center"
-                style={{ backgroundImage: `url(${WorkImg1})` }}
-              >
-                <div className="overlay"></div>
-                <div className="text text-center p-4">
-                  <h3>
-                    <a href="#">Branding &amp; Illustration Design</a>
-                  </h3>
-                  <span>Web Design</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div
-                className="project img ftco-animate d-flex justify-content-center align-items-center"
-                style={{ backgroundImage: `url(${WorkImg2})` }}
-              >
-                <div className="overlay"></div>
-                <div className="text text-center p-4">
-                  <h3>
-                    <a href="#">Branding &amp; Illustration Design</a>
-                  </h3>
-                  <span>Web Design</span>
+                  <span>Calibration tool for store hiring managers</span>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <section id="home" className="hero-wrap js-fullheight">
         <div className="overlay"></div>
-        <div className="container">
+        <div className="container" id="homeContainer">
           <div
             className="row no-gutters slider-text js-fullheight justify-content-center align-items-center"
             style={{ height: 503 }}

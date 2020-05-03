@@ -1,5 +1,5 @@
 import React from "react";
-
+import marsLogo from "../images/mars.png";
 const Nav = ({ children }) => {
   return (
     <>
@@ -8,8 +8,8 @@ const Nav = ({ children }) => {
         id="ftco-navbar"
       >
         <div className="container">
-          <a className="navbar-brand" href="index.html">
-            <span>A</span>ngarag
+          <a href="/">
+            <img src={marsLogo} alt="marsLogo" style={{ height: 64 }} />
           </a>
           <button
             className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
