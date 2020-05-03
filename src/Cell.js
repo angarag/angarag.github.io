@@ -5,13 +5,13 @@ class Cell extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clicked: false
+      clicked: false,
     };
     this.click = this.click.bind(this);
   }
   click() {
     this.setState({
-      clicked: true
+      clicked: true,
     });
     //    console.log(this.props.index);
     this.props.onClick(this.props.index);
@@ -19,7 +19,7 @@ class Cell extends Component {
   shouldComponentUpdate(newProps, newState) {
     if (this.props.is_reset !== newProps.is_reset) {
       this.setState({
-        clicked: false
+        clicked: false,
       });
       return true;
     }

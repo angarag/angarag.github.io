@@ -5,14 +5,17 @@ import Stuff from "./spa/Stuff";
 import Contact from "./spa/Contact";
 import Connect from "./App";
 import Counter from "./Counter";
+import Clock from "./Clock";
+import Root from "./Root";
+import TodoList from "./TodoList";
 class Main extends Component {
   render() {
     console.log("Main: render");
     return (
       <>
-        <Connect>
+        {/* <Connect>
           <Counter inc={Connect.inc} dec={Connect.dec} count={Connect.count} />
-        </Connect>
+        </Connect> */}
         <HashRouter>
           <div>
             <h1>Simple SPA</h1>
@@ -34,6 +37,9 @@ class Main extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/stuff" component={Stuff} />
             <Route path="/contact" component={Contact} />
+            <Route path="/clock" component={Clock} />
+            <Route path="/tictactoe" component={Root} />
+            <Route path="/todolist" component={TodoList} />
           </div>
         </HashRouter>
       </>

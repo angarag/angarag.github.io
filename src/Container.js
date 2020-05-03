@@ -5,13 +5,13 @@ class Container extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ip: ""
+      ip: "",
     };
   }
   componentDidMount() {
     console.log("Container: component did mount");
     this.setState({
-      ip: "99.88.77.66"
+      ip: "99.88.77.66",
     });
   }
   componentDidUpdate() {

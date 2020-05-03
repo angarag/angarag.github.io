@@ -6,13 +6,12 @@ import counter from "./reducer";
 import Root from "./Root";
 import Clock from "./Clock";
 import TodoList from "./TodoList";
+import Main from "./Main";
 var store = createStore(counter);
 ReactDOM.render(
   <>
     <Provider store={store}>
-      <Root />
-      <Clock />
-      <TodoList />
+      <Main />
     </Provider>
   </>,
   document.getElementById("container")

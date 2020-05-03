@@ -4,7 +4,7 @@ class TodoList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: []
+      items: [],
     };
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
@@ -15,19 +15,19 @@ class TodoList extends Component {
       var item_arr = this.state.items;
       item_arr.unshift({
         text: this.mars.value,
-        key: Date.now()
+        key: Date.now(),
       });
       this.setState({
-        items: item_arr
+        items: item_arr,
       });
       console.log(item_arr);
     }
     e.preventDefault();
   }
   deleteItem(key) {
-    const fltrd = this.state.items.filter(item => item.key !== key);
+    const fltrd = this.state.items.filter((item) => item.key !== key);
     this.setState({
-      items: fltrd
+      items: fltrd,
     });
   }
   componentDidMount(e) {
@@ -46,7 +46,7 @@ class TodoList extends Component {
           <form onSubmit={this.addItem}>
             <input
               type="text"
-              ref={a => {
+              ref={(a) => {
                 this._inputElement = a;
                 this.mars = a;
               }}

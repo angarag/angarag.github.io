@@ -4,7 +4,7 @@ class Clock extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: new Date().toLocaleString()
+      time: new Date().toLocaleString(),
     };
     console.log(this.state.time);
     this.tick = this.tick.bind(this);
@@ -14,7 +14,7 @@ class Clock extends Component {
   }
   tick() {
     this.setState({
-      time: new Date().toLocaleString()
+      time: new Date().toLocaleString(),
     });
   }
   render() {

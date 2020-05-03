@@ -15,9 +15,9 @@ class Tictactoe extends Component {
         [1, 4, 7],
         [2, 5, 8],
         [0, 4, 8],
-        [2, 4, 6]
+        [2, 4, 6],
       ],
-      is_reset: false
+      is_reset: false,
     };
     this.buttonClick = this.buttonClick.bind(this);
     this.hasWinner = this.hasWinner.bind(this);
@@ -27,7 +27,7 @@ class Tictactoe extends Component {
     this.setState({
       currentPlayer: "X",
       cells: new Array(9),
-      is_reset: !this.state.is_reset
+      is_reset: !this.state.is_reset,
     });
   }
   buttonClick(item) {
@@ -38,24 +38,24 @@ class Tictactoe extends Component {
       if (ccells.includes(undefined))
         this.setState({
           currentPlayer: this.state.currentPlayer === "X" ? "O" : "X",
-          cells: ccells
+          cells: ccells,
         });
       else
         this.setState({
-          currentPlayer: "Noone wins"
+          currentPlayer: "Noone wins",
         });
     else {
       this.setState({
-        currentPlayer: this.state.currentPlayer + " wins"
+        currentPlayer: this.state.currentPlayer + " wins",
       });
     }
   }
   hasWinner() {
-    const Xs = this.state.cells.filter(i => i === "X");
-    const Os = this.state.cells.filter(i => i === "O");
+    const Xs = this.state.cells.filter((i) => i === "X");
+    const Os = this.state.cells.filter((i) => i === "O");
     const arr = {
       X: [],
-      O: []
+      O: [],
     };
     let result = false;
     if (Xs.length > 2 || Os.length > 2) {

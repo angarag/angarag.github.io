@@ -5,14 +5,14 @@ class MenuContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: false
+      visible: false,
     };
     this.toggleMenu = this.toggleMenu.bind(this);
     this.handleMouseDown = this.handleMouseDown.bind(this);
   }
   toggleMenu() {
     this.setState({
-      visible: !this.state.visible
+      visible: !this.state.visible,
     });
   }
   handleMouseDown(e) {
