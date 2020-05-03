@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./css/tictactoe.css";
+import "./othercss/tictactoe.css";
 
 class Cell extends Component {
   constructor(props) {

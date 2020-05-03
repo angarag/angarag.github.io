@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Cell from "./Cell";
-import "./css/tictactoe.css";
+import "./othercss/tictactoe.css";
 class Tictactoe extends Component {
   constructor(props) {
     super(props);
