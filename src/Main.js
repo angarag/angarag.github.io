@@ -27,7 +27,6 @@ const Main = () => {
       <AboutMe />
       <Education />
       <Busad />
-      <Contact />
     </>
   );
 };

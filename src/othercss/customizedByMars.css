@@ -18,6 +18,10 @@ nav#ftco-navbar {
 nav#ftco-navbar a {
   margin-left: 20px;
 }
+nav#ftco-navbar li {
+  display: flex;
+  align-items: center;
+}
 html {
   top: 0;
   left: 0;
@@ -54,4 +58,19 @@ section#about {
 
 .borderBottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: flex;
+  }
+}
+.mobile li {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }

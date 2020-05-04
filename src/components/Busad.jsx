@@ -1,7 +1,7 @@
 import React from "react";
-import WorkImg1 from "../images/about.jpg";
-import WorkImg2 from "../images/about.jpg";
-import WorkImg3 from "../images/about.jpg";
+import Car from "../images/car.jpg";
+import BSB from "../images/tech.jpg";
+import TB from "../images/hr.jpg";
 const Busad = () => {
   return (
     <>
@@ -11,17 +11,17 @@ const Busad = () => {
             <div className="col-md-12 heading-section text-center ftco-animate">
               <h1 className="big big-2">Projects</h1>
               <h2 className="mb-4">Professional Projects</h2>
-              <p>
+              <h6>
                 Here are some of the projects I have implemented in my
                 professional career.
-              </p>
+              </h6>
             </div>
           </div>
           <div className="row no-gutters">
             <div className="col-md-4">
               <div
                 className="project img ftco-animate d-flex justify-content-center align-items-center"
-                style={{ backgroundImage: `url(${WorkImg1})` }}
+                style={{ backgroundImage: `url(${Car})` }}
               >
                 <div className="overlay"></div>
                 <div className="text text-center p-4">
@@ -37,7 +37,7 @@ const Busad = () => {
             <div className="col-md-4">
               <div
                 className="project img ftco-animate d-flex justify-content-center align-items-center"
-                style={{ backgroundImage: `url(${WorkImg1})` }}
+                style={{ backgroundImage: `url(${BSB})` }}
               >
                 <div className="overlay"></div>
                 <div className="text text-center p-4">
@@ -53,7 +53,7 @@ const Busad = () => {
             <div className="col-md-4">
               <div
                 className="project img ftco-animate d-flex justify-content-center align-items-center"
-                style={{ backgroundImage: `url(${WorkImg3})` }}
+                style={{ backgroundImage: `url(${TB})` }}
               >
                 <div className="overlay"></div>
                 <div className="text text-center p-4">

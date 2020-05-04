@@ -29,6 +29,10 @@ const AboutMe = () => {
                     Versatile Software Engineer with 9+ years of experience in
                     IT.
                   </p>
+                  <p>
+                    Specialized in Web Development technologies such as
+                    JavaScript, React.js/Redux, Angular, Node.js and Express.js.
+                  </p>
                   <ul className="about-info mt-4 px-md-0 px-2">
                     <li className="d-flex">
                       <span>Email:</span>{" "}
@@ -43,7 +47,11 @@ const AboutMe = () => {
               <div className="counter-wrap ftco-animate d-flex mt-md-3 fadeInUp ftco-animated">
                 <div className="text">
                   <p>
-                    <a href="/dd" className="btn btn-primary py-3 px-3">
+                    <a
+                      target="_blank"
+                      href="https://www.dropbox.com/s/3jzzbz4nx4neong/angarag-resume-20200420.pdf?dl=0"
+                      className="btn btn-primary py-3 px-3"
+                    >
                       Download resume
                     </a>
                   </p>

@@ -1,5 +1,7 @@
 import React from "react";
 import marsLogo from "../images/mars.png";
+import Contact from "./Contact";
+import HomeIcon from "@material-ui/icons/Home";
 const Nav = ({ children }) => {
   return (
     <>
@@ -11,23 +13,17 @@ const Nav = ({ children }) => {
           <a href="/">
             <img src={marsLogo} alt="marsLogo" style={{ height: 64 }} />
           </a>
-          <button
-            className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
-            type="button"
-            data-toggle="collapse"
-            data-target="#ftco-nav"
-            aria-controls="ftco-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="oi oi-menu"></span> Menu
-          </button>
+          <div className="mobile">
+            <Contact />
+          </div>
 
           <div className="collapse navbar-collapse" id="ftco-nav">
             <ul className="navbar-nav nav ml-auto">
               <li className="nav-item">
                 <a href="#home" className="nav-link">
-                  <span>Home</span>
+                  <span>
+                    <HomeIcon />
+                  </span>
                 </a>
               </li>
               <li className="nav-item">
@@ -45,11 +41,7 @@ const Nav = ({ children }) => {
                   <span>Projects</span>
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#contact" className="nav-link">
-                  <span>Contact</span>
-                </a>
-              </li>
+              <Contact />
             </ul>
           </div>
         </div>

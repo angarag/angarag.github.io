@@ -1,5 +1,8 @@
 import React from "react";
-
+import SchoolIcon from "@material-ui/icons/School";
+import WorkIcon from "@material-ui/icons/Work";
+import CodeIcon from "@material-ui/icons/Code";
+import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 const Education = () => {
   return (
     <section
@@ -12,16 +15,28 @@ const Education = () => {
             <nav id="navi">
               <ul>
                 <li>
-                  <a href="#page-1">Education</a>
+                  <a href="#page-1">
+                    <SchoolIcon />
+                    {" Education"}
+                  </a>
                 </li>
                 <li>
-                  <a href="#page-2">Experience</a>
+                  <a href="#page-2">
+                    <WorkIcon />
+                    {" Experience"}
+                  </a>
                 </li>
                 <li>
-                  <a href="#page-3">Skills</a>
+                  <a href="#page-3">
+                    <CodeIcon />
+                    {" Skills"}
+                  </a>
                 </li>
                 <li>
-                  <a href="#page-4">Awards</a>
+                  <a href="#page-4">
+                    <CardGiftcardIcon />
+                    {" Awards"}
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -294,7 +309,14 @@ const Education = () => {
               </div>
             </div>
             <div id="page-4" class="page four">
-              <h2 className="heading">Awards</h2>
+              <h2
+                className="heading"
+                style={{
+                  marginTop: 12,
+                }}
+              >
+                Awards
+              </h2>
               <div className="resume-wrap d-flex ftco-animate">
                 <div className="icon d-flex align-items-center justify-content-center">
                   <span className="flaticon-ideas"></span>
