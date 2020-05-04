@@ -1,6 +1,9 @@
 import React from "react";
 import Background from "../images/about.jpg";
 import Mouse from "./Mouse";
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import GetAppIcon from "@material-ui/icons/GetApp";
 const AboutMe = () => {
   return (
     <>
@@ -33,13 +36,20 @@ const AboutMe = () => {
                     Specialized in Web Development technologies such as
                     JavaScript, React.js/Redux, Angular, Node.js and Express.js.
                   </p>
-                  <ul className="about-info mt-4 px-md-0 px-2">
-                    <li className="d-flex">
-                      <span>Email:</span>{" "}
-                      <span>angarag.batjargal@gmail.com</span>
+                  <ul className="about-info mt-4 px-md-0 px-2 iconColor">
+                    <li>
+                      <MailOutlineIcon />
+                      <span>
+                        <a href="mailto:angarag.batjargal@gmail.com">
+                          angarag.batjargal@gmail.com
+                        </a>
+                      </span>
                     </li>
-                    <li className="d-flex">
-                      <span>Phone: </span> <span>+1-707-508-9432</span>
+                    <li>
+                      <PhoneAndroidIcon />
+                      <span>
+                        <a href="tel:707-508-9432">+1-707-508-9432</a>
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -51,8 +61,9 @@ const AboutMe = () => {
                       target="_blank"
                       href="https://www.dropbox.com/s/3jzzbz4nx4neong/angarag-resume-20200420.pdf?dl=0"
                       className="btn btn-primary py-3 px-3"
+                      style={{ fontSize: 24 }}
                     >
-                      Download resume
+                      <GetAppIcon /> resume
                     </a>
                   </p>
                 </div>

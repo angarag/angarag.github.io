@@ -63,7 +63,7 @@ const Education = () => {
               </div>
               <div className="text pl-3">
                 <span className="date">2006-2011</span>
-                <h2>Bachelor of Science in Computer Science</h2>
+                <h2>Bachelor degree in Computer Science</h2>
                 <span className="position">Istanbul Technical University</span>
                 {/* <p>
                     lorem

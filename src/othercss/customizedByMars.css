@@ -36,6 +36,9 @@ section#about {
   display: flex !important;
   justify-content: center;
 }
+.iconColor {
+  color: black;
+}
 .aboutMars {
   background-color: #edf1ff;
   height: 100vh;
