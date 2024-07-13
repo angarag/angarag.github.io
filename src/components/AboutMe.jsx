@@ -48,7 +48,7 @@ const AboutMe = () => {
                     <li>
                       <PhoneAndroidIcon />
                       <span>
-                        <a href="tel:707-508-9432">+1-707-508-9432</a>
+                        <a href="tel:"></a>
                       </span>
                     </li>
                   </ul>
