@@ -59,7 +59,7 @@ const AboutMe = () => {
                   <p>
                     <a
                       target="_blank"
-                      href="https://www.dropbox.com/s/v4bv92bul9fsp6j/angarag-resume-20210330.pdf?dl=0"
+                      href="https://www.dropbox.com/scl/fi/qt61xxf4f48oym3spifen/angarag-resume-20240713.docx?rlkey=vj3ovgpw8304rz1fzqsrqk39p&st=nmzi61t2&dl=0"
                       className="btn btn-primary py-3 px-3"
                       style={{ fontSize: 24 }}
                     >
